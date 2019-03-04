@@ -2,7 +2,7 @@ class Ballon {
   constructor() {
     this.r = random(90, 150);
     this.pos = createVector(random(width), random(height, height + random(300, 700)));
-    this.upStep = 5;
+    this.upStep = random(4, 6);
     this.red = random(100, 255);
     this.green = random(100, 255);
     this.blue = random(100, 255);
