@@ -8,7 +8,7 @@
 
 var mobils = [];
 var balloons = [];
-var total = 10;
+var total = 20;
 var font;
 var foto, bgStatic;
 var txt = "HAPPY B'DAY";
