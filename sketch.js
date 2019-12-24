@@ -11,7 +11,7 @@ var balloons = [];
 var total = 12;
 var font;
 var foto, bgStatic;
-var txt = "HAPPY B'DAY";
+var txt = "HAPPY BIRTHDAY";
 var name = "TO ME";
 var sfxPop;
 
@@ -67,7 +67,7 @@ function draw() {
 	for (let i = 0; i < balloons.length; i++) {
 		balloons[i].show();
 		balloons[i].up();
-		balloons[i].checkEdge();
+		balloons[i].checkEdge()
 		if (balloons[i].mouseHover()) {
 			sfxPop.play();
 			balloons.splice(i, 1);
@@ -75,6 +75,14 @@ function draw() {
 	}
 
 	if (balloons.length < 3) {
+		for (let i = 0; i < total; i++) {
+			balloons.push(new Ballon());
+		}
+	}
+}
+
+function keyPressed() {
+	if (key === 'z' || key === 'Z') {
 		for (let i = 0; i < total; i++) {
 			balloons.push(new Ballon());
 		}
